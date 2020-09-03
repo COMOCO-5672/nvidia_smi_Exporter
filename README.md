@@ -11,24 +11,25 @@
 
 `  ./nvidia_smi_exporter.exe -h `
 
-> usage: nvidia_smi_exporter.exe [<flags>]
->
-> Flags:
->   -h, --help                   Show context-sensitive help (also try --help-long
->                                and --help-man).
->       --web.listen-address=":9101"
->                                Address to listen on for web interface and
->                                telemetry.
->       --web.telemetry-path="/metrics"
->                                Path under which to expose metrics.
->       --consul.health-summary  Generate a health summary for each service
->                                instance. Needs n+1 queries to collect all
->                                information.
->       --log.level=info         Only log messages with the given severity or
->                                above. One of: [debug, info, warn, error]
->       --log.format=logfmt      Output format of log messages. One of: [logfmt,
->                                json]
->       --version                Show application version.
+ usage: nvidia_smi_exporter.exe [<flags>]
+
+ Flags:
+   -h, --help                                   Show context-sensitive help (also try --help-long
+                         and --help-man).
+       --web.listen-address=":9101"
+                         Address to listen on for web interface and
+                         telemetry.
+       --web.telemetry-path="/metrics"
+                         Path under which to expose metrics.
+       --consul.health-summary
+						 Generate a health summary for each service
+                         instance. Needs n+1 queries to collect all
+                         information.
+       --log.level=info               Only log messages with the given severity or
+                         above. One of: [debug, info, warn, error]
+       --log.format=logfmt      Output format of log messages. One of: [logfmt,
+                         json]
+       --version                         Show application version.
 
 [  参数标准  ]
 
